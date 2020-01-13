@@ -1,8 +1,5 @@
 import tweepy
-import logging
-import os
 
-logger = logging.getLogger()
 
 #create a credentials.py and hold app keys&tokens
 from credentials import ckey,csecret,atoken,asecret
@@ -30,7 +27,5 @@ def create_api():
 	except:
 	    print("Error during authentication")
 
-	logger.info("API created")
+	print("API Created")
 	return api
-
-
