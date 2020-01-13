@@ -7,7 +7,7 @@ def follow_followers(api):
     print("Retrieving and following followers")
     for follower in tweepy.Cursor(api.followers).items():
         if not follower.following:
-            print("Following {follower.name}")
+            print("Following : "+follower.name)
             follower.follow()
 
 def main():
